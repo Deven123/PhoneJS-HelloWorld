@@ -19,8 +19,13 @@
         </script>
 	</head>
     <body>
+        <div data-options="dxLayout : { name: 'default' } " >
+            <div data-options="dxContentPlaceholder : { name: 'content' } " ></div>
+        </div>
         <div data-options="dxView: {name: 'home'}">
-            Hello World!
+            <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+                Hello World!
+            </div>
         </div>  
     </body>
 </html>
